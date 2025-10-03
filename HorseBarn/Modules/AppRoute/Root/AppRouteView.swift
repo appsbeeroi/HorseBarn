@@ -16,13 +16,13 @@ struct AppRouteView: View {
                 CatalogueView(isShowTabBar: $isShowTabBar)
                     .tag(AppRouteState.catalogue)
                 
-                CareView()
+                CareView(isShowTabBar: $isShowTabBar)
                     .tag(AppRouteState.care)
                 
-                TrainingView()
+                TrainingView(isShowTabBar: $isShowTabBar)
                     .tag(AppRouteState.training)
                 
-                SettingsView()
+                SettingsView(isShowTabBar: $isShowTabBar)
                     .tag(AppRouteState.settings)
             }
             
@@ -47,7 +47,7 @@ struct AppRouteView: View {
                 }
                 .padding(.top, 13)
                 .padding(.horizontal, 35)
-                .padding(.bottom, 44)
+                .padding(.bottom, UIScreen.isSE ? 10 : 44)
                 .background(
                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 20, topTrailing: 20))
                         .fill(.white)
@@ -68,38 +68,7 @@ struct AppRouteView: View {
 
 
 
-struct CareView: View {
-    
-    var body: some View {
-        ZStack {
-            Image(.Images.bgClear)
-                .reorganize()
-            
-            Text("Care")
-        }
-    }
-}
 
-struct TrainingView: View {
-    
-    var body: some View {
-        ZStack {
-            Image(.Images.bgClear)
-                .reorganize()
-            
-            Text("Training")
-        }
-    }
-}
 
-struct SettingsView: View {
-    
-    var body: some View {
-        ZStack {
-            Image(.Images.bgClear)
-                .reorganize()
-            
-            Text("Settings")
-        }
-    }
-}
+
+

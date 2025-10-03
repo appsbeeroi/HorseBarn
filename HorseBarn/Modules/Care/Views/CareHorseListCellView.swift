@@ -1,15 +1,17 @@
 import SwiftUI
 
-struct CatalogueHorseCellView: View {
+struct CareHorseListCellView: View {
     
     let horse: Horse
-    let action: () -> Void
+    let horses: [Horse]
+    
+    @Binding var selectedHorse: Horse?
     
     var body: some View {
         Button {
-            action()
+            selectedHorse = horse
         } label: {
-            HStack(spacing: 10) {
+            HStack {
                 if let image = horse.image {
                     Image(uiImage: image)
                         .resizable()
@@ -19,7 +21,7 @@ struct CatalogueHorseCellView: View {
                         .cornerRadius(24)
                 }
                 
-                VStack(spacing: 6) {
+                VStack(spacing: 12) {
                     Text(horse.name)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .font(.ultra(with: 20))
@@ -30,17 +32,31 @@ struct CatalogueHorseCellView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.ultra(with: 11))
                             .foregroundStyle(.hbBrown.opacity(0.5))
-                            
+                        
                         Text(horse.breed)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.ultra(with: 11))
                             .foregroundStyle(.hbBrown)
                     }
                 }
+                
+                Circle()
+                    .stroke(.hbOrange, lineWidth: 3)
+                    .frame(width: 30, height: 30)
+                    .overlay {
+                        if horse.id == selectedHorse?.id ?? UUID() {
+                            Circle()
+                                .frame(width: 20, height: 20)
+                                .foregroundStyle(.orange)
+                        }
+                    }
+                    .frame(maxHeight: .infinity, alignment: .topTrailing)
+                    .padding(10)
             }
             .padding(8)
             .background(.hbBeige)
             .cornerRadius(23)
+            .frame(height: 120)
         }
     }
 }

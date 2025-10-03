@@ -104,6 +104,7 @@ struct CatalogueView: View {
                     .font(.ultra(with: 14))
                     .foregroundStyle(.hbBrown.opacity(0.75))
                     .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             
             addHorse
@@ -140,6 +141,9 @@ struct CatalogueView: View {
                 addHorse
             }
             .padding(.horizontal, 35)
+            
+            Color.clear
+                .frame(height: 80)
         }
     }
 }
@@ -147,5 +151,3 @@ struct CatalogueView: View {
 #Preview {
     CatalogueView(isShowTabBar: .constant(false))
 }
-
-
