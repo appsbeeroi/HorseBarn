@@ -6,11 +6,52 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E790E8D2E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E790E862E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E790E962E96CABE009B12CF /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 7E790E952E96CABE009B12CF /* OneSignalExtension */; };
+		7E790E982E96CABE009B12CF /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E790E972E96CABE009B12CF /* OneSignalFramework */; };
+		7E790E9A2E96CABE009B12CF /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E790E992E96CABE009B12CF /* OneSignalInAppMessages */; };
+		7E790E9D2E96CAEC009B12CF /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7E790E9C2E96CAEC009B12CF /* FirebaseAnalyticsIdentitySupport */; };
+		7E790E9F2E96CAEC009B12CF /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7E790E9E2E96CAEC009B12CF /* FirebaseRemoteConfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E790E8B2E96CA66009B12CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF967462E8659EE00AA37EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E790E852E96CA66009B12CF;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E790E922E96CA66009B12CF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E790E8D2E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7E790E862E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF9674E2E8659EE00AA37EE /* HorseBarn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorseBarn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7E790E912E96CA66009B12CF /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7E790E852E96CA66009B12CF /* OneSignalNotificationServiceExtension */;
+		};
 		7EF9677A2E867D6A00AA37EE /* Exceptions for "HorseBarn" folder in "HorseBarn" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +62,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7E790E872E96CA66009B12CF /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7E790E912E96CA66009B12CF /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		7EF967502E8659EE00AA37EE /* HorseBarn */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,10 +81,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E790E832E96CA66009B12CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E790E962E96CABE009B12CF /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EF9674B2E8659EE00AA37EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E790E9A2E96CABE009B12CF /* OneSignalInAppMessages in Frameworks */,
+				7E790E982E96CABE009B12CF /* OneSignalFramework in Frameworks */,
+				7E790E9D2E96CAEC009B12CF /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				7E790E9F2E96CAEC009B12CF /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7EF967502E8659EE00AA37EE /* HorseBarn */,
+				7E790E872E96CA66009B12CF /* OneSignalNotificationServiceExtension */,
 				7EF9674F2E8659EE00AA37EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7EF9674E2E8659EE00AA37EE /* HorseBarn.app */,
+				7E790E862E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +124,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E790E852E96CA66009B12CF /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E790E8E2E96CA66009B12CF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				7E790E822E96CA66009B12CF /* Sources */,
+				7E790E832E96CA66009B12CF /* Frameworks */,
+				7E790E842E96CA66009B12CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7E790E872E96CA66009B12CF /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				7E790E952E96CABE009B12CF /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 7E790E862E96CA66009B12CF /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7EF9674D2E8659EE00AA37EE /* HorseBarn */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EF967592E8659EF00AA37EE /* Build configuration list for PBXNativeTarget "HorseBarn" */;
@@ -68,16 +154,22 @@
 				7EF9674A2E8659EE00AA37EE /* Sources */,
 				7EF9674B2E8659EE00AA37EE /* Frameworks */,
 				7EF9674C2E8659EE00AA37EE /* Resources */,
+				7E790E922E96CA66009B12CF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E790E8C2E96CA66009B12CF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7EF967502E8659EE00AA37EE /* HorseBarn */,
 			);
 			name = HorseBarn;
 			packageProductDependencies = (
+				7E790E972E96CABE009B12CF /* OneSignalFramework */,
+				7E790E992E96CABE009B12CF /* OneSignalInAppMessages */,
+				7E790E9C2E96CAEC009B12CF /* FirebaseAnalyticsIdentitySupport */,
+				7E790E9E2E96CAEC009B12CF /* FirebaseRemoteConfig */,
 			);
 			productName = HorseBarn;
 			productReference = 7EF9674E2E8659EE00AA37EE /* HorseBarn.app */;
@@ -93,6 +185,9 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					7E790E852E96CA66009B12CF = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					7EF9674D2E8659EE00AA37EE = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -107,17 +202,29 @@
 			);
 			mainGroup = 7EF967452E8659EE00AA37EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7E790E942E96CABE009B12CF /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				7E790E9B2E96CAEC009B12CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7EF9674F2E8659EE00AA37EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7EF9674D2E8659EE00AA37EE /* HorseBarn */,
+				7E790E852E96CA66009B12CF /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E790E842E96CA66009B12CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EF9674C2E8659EE00AA37EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +235,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E790E822E96CA66009B12CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EF9674A2E8659EE00AA37EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +251,79 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7E790E8C2E96CA66009B12CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E790E852E96CA66009B12CF /* OneSignalNotificationServiceExtension */;
+			targetProxy = 7E790E8B2E96CA66009B12CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7E790E8F2E96CA66009B12CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horse.barn.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7E790E902E96CA66009B12CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horse.barn.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		7EF967572E8659EF00AA37EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,6 +455,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseBarn/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you choose and upload pictures.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This data will be used to deliver personalized ads and improve your app experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.horse.barn.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -307,6 +495,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseBarn/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you choose and upload pictures.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This data will be used to deliver personalized ads and improve your app experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.horse.barn.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -336,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E790E8E2E96CA66009B12CF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E790E8F2E96CA66009B12CF /* Debug */,
+				7E790E902E96CA66009B12CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7EF967492E8659EE00AA37EE /* Build configuration list for PBXProject "HorseBarn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -355,6 +554,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E790E942E96CABE009B12CF /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		7E790E9B2E96CAEC009B12CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E790E952E96CABE009B12CF /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E790E942E96CABE009B12CF /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		7E790E972E96CABE009B12CF /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E790E942E96CABE009B12CF /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7E790E992E96CABE009B12CF /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E790E942E96CABE009B12CF /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		7E790E9C2E96CAEC009B12CF /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E790E9B2E96CAEC009B12CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		7E790E9E2E96CAEC009B12CF /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E790E9B2E96CAEC009B12CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EF967462E8659EE00AA37EE /* Project object */;
 }

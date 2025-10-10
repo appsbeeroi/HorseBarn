@@ -3,9 +3,7 @@ import SwiftUI
 struct SplashScreen: View {
     
     @Binding var isLaunchMain: Bool
-    
-    @State private var isAnimating = false
-    
+        
     var body: some View {
         ZStack {
             Image(.Images.bgHorse)
@@ -21,11 +19,9 @@ struct SplashScreen: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .padding(.top, 200)
         }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                withAnimation {
-                    isLaunchMain = true
-                }
+        .onReceive(NotificationCenter.default.publisher(for: .splashTransition)) { _ in
+            withAnimation {
+                isLaunchMain = true
             }
         }
     }
