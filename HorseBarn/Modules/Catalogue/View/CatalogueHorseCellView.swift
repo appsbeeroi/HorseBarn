@@ -37,6 +37,16 @@ struct CatalogueHorseCellView: View {
                             .foregroundStyle(.hbBrown)
                     }
                 }
+                
+                Circle()
+                    .frame(width: 40, height: 40)
+                    .foregroundStyle(.hbBeige)
+                    .overlay {
+                        Image(systemName: horse.isFavorite ? "heart.fill" : "heart")
+                            .font(.system(size: 24, weight: .medium))
+                            .foregroundStyle(.hbOrange)
+                    }
+                    .frame(maxHeight: .infinity, alignment: .topTrailing)
             }
             .padding(8)
             .background(.hbBeige)

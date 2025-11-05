@@ -4,6 +4,7 @@ enum SettingsType: Identifiable, CaseIterable {
     case about
     case privacy
     case notification
+    case callSupport
     
     var title: String {
         switch self {
@@ -13,15 +14,19 @@ enum SettingsType: Identifiable, CaseIterable {
                 "Privacy Policy"
             case .notification:
                 "Notification"
+            case .callSupport:
+                "Call support"
         }
     }
-    #warning("ссылки")
+    
     var urlString: String {
         switch self {
             case .about:
                 "https://sites.google.com/view/horsebarn/home"
             case .privacy:
                 "https://sites.google.com/view/horsebarn/privacy-policy"
+            case .callSupport:
+                "https://sites.google.com/view/horsebarn/app-support"
             case .notification:
                 ""
         }
